@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/image_view_client"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_launcher" />
+
+    <EditText
+        android:id="@+id/edit_txt_client_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view_client"
+        android:inputType="text"
+        android:padding="5dp"
+        android:hint="@string/client_name_hint" />
+
+    <EditText
+        android:id="@+id/edit_txt_client_emaill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_txt_client_name"
+        android:inputType="text"
+        android:padding="5dp"
+        android:hint="@string/client_email_hint" />
+
+    <EditText
+        android:id="@+id/edit_txt_client_contact_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_txt_client_emaill"
+        android:inputType="text"
+        android:padding="5dp"
+        android:hint="@string/client_contact_no_hint" />
+
+    <EditText
+        android:id="@+id/edit_txt_client_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_txt_client_contact_no"
+        android:inputType="text"
+        android:padding="5dp"
+        android:hint="@string/client_address_hint" />
+    <EditText
+        android:id="@+id/edit_txt_client_passwordd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_txt_client_address"
+        android:inputType="text"
+        android:padding="5dp"
+        android:hint="@string/client_passwrd_hint" />
+    <EditText
+        android:id="@+id/edit_txt_client_confrm_passwrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_txt_client_passwordd"
+        android:inputType="text"
+        android:padding="5dp"
+        android:hint="@string/client_conf_passwrd_hint" />
+    <Button 
+        android:id="@+id/sighn_up_submit_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/edit_txt_client_confrm_passwrd"
+        android:layout_centerHorizontal="true"
+        android:text="@string/submit_btn"/>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+     <ImageView
+        android:id="@+id/image_view_client"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_launcher" />
+    <TextView
+        android:id="@+id/new_user_txt"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/image_view_client"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="@string/new_user_text"/>
+    <Button 
+        android:id="@+id/make_request"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/new_user_txt"
+        android:text="@string/make_req_btn_txt"/>
+    
+
+</RelativeLayout>

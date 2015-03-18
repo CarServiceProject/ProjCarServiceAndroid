@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        android:src="@drawable/caricon" />
+
+    <EditText
+        android:id="@+id/username_edt_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:background="@drawable/usernamebg"
+        android:drawableLeft="@drawable/usericon"
+        android:hint="@string/username_edt_txt_hint"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/paassword_edt_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_edt_txt"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/usernamebg"
+        android:drawableLeft="@drawable/passwordicon"
+        android:hint="@string/password"
+        android:textColorHint="@android:color/white" />
+
+    <CheckBox
+        android:id="@+id/remem_psswrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paassword_edt_txt"
+        android:text="@string/Rem_passerd" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remem_psswrd"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login_btn_txt" />
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="@string/signup_btn_txt" />
+
+    <Button
+        android:id="@+id/forgot_passwrd_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/signup_btn"
+        android:text="@string/forgot_passwrd"
+        android:textSize="12sp" />
+
+</RelativeLayout>
