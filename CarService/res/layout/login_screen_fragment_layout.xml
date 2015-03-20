@@ -1,24 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginScreenLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
     android:orientation="vertical" >
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@null"
-        android:src="@drawable/caricon" />
-
+    
+<!--     <LinearLayout 
+        android:id="@+id/t"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/loginScreenLayout"
+        android:background="#ff0000"
+        android:orientation="horizontal">
+        
+        
+        <ImageView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/usericon"/>
+        
+        <View 
+            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:background="@android:color/white"/>
+        
+        <EditText 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="gdfghuirhgoir"/>
+        
+        
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/t2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/loginScreenLayout"
+        android:background="#ff0000"
+        android:orientation="horizontal">
+        
+        
+        <ImageView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/usericon"/>
+        
+        <View 
+            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:background="@android:color/white"/>
+        
+        <EditText 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="gdfghuirhgoir"/>
+        
+        
+        
+        
+    </LinearLayout> -->
+    
     <EditText
         android:id="@+id/username_edt_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/logo"
-        android:background="@drawable/usernamebg"
+        android:background="#ff0000"
         android:drawableLeft="@drawable/usericon"
         android:hint="@string/username_edt_txt_hint"
         android:textColorHint="@android:color/white" />
@@ -29,13 +80,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/username_edt_txt"
         android:layout_marginTop="5dp"
-        android:background="@drawable/usernamebg"
+        android:background="#ff0000"
         android:drawableLeft="@drawable/passwordicon"
         android:hint="@string/password"
         android:textColorHint="@android:color/white" />
 
     <CheckBox
-        android:id="@+id/remem_psswrd"
+        android:id="@+id/remem_psswrd_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/paassword_edt_txt"
@@ -45,7 +96,7 @@
         android:id="@+id/login_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/remem_psswrd"
+        android:layout_below="@+id/remem_psswrd_checkbox"
         android:layout_centerHorizontal="true"
         android:text="@string/login_btn_txt" />
 

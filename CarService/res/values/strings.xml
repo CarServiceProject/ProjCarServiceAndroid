@@ -12,9 +12,9 @@
     <string name="login_btn_txt">Login</string>
     <string name="signup_btn_txt">Sign Up</string>
     <string name="forgot_passwrd">Forgot Password</string>
-    
-    
-    
+    <string name="serviceProvider">Service Provider</string>
+    <string name="customer">Customer</string>
+    <string name="continueas">Continue As : </string>
     <string name="client_name_hint">Name</string>
     <string name="client_email_hint">E-mail</string>
     <string name="client_contact_no_hint">Contact No</string>
